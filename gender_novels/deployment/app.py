@@ -22,16 +22,10 @@ def render_team():
 def render_about():
     return render_template('about.html')
 
-@app.route('/<string:text>/')
-def render_base_text(text):
-    """
-    Renders subpage with base.html template that describes our gender novels research
-    :param text: placeholder in base.html written as {{ text }} for words that will vary based on subpage
-    :return: subpage with {{ text }} substituted with actual text such as the About page
 
-    TODO (Xu): Figure out how to link other html files to base.html
-    """
-    return render_template('base.html', text = text)
+@app.route('/social/')
+def render_social():
+    return render_template('social_media.html')
 
 
 if __name__ == '__main__':
