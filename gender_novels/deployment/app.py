@@ -10,8 +10,17 @@ print(app.config)
 
 @app.route('/')
 def render_gender_novels():
-    return render_template('landing_page.html')
+    return render_template('gender_novels.html')
 
+
+@app.route('/team/')
+def render_team():
+    return render_template('team.html')
+
+
+@app.route('/about/')
+def render_about():
+    return render_template('about.html')
 
 @app.route('/<string:text>/')
 def render_base_text(text):
