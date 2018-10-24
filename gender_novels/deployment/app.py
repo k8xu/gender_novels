@@ -65,8 +65,11 @@ def render_team():
 
 
 if __name__ == '__main__':
-    # open a webbrowser on the landing page
+    # open a web browser on the landing page
     import webbrowser
+    # note to self (Xu): correct on server but might try to use variable instead of hard code,
+    # alternative to hardcoding but find later after development is done
+    # note to self (Xu): should be 188.166.88.141:8021
     webbrowser.open('http://127.0.0.1:8021/', new=2)
     app.run(host='127.0.0.1', port='8021')
 
