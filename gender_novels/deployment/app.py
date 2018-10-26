@@ -28,6 +28,7 @@ def render_corpora():
     return render_template('corpora.html')
 
 
+<<<<<<< HEAD
 @app.route('/topic_one.html')
 def render_topic_one():
     return render_template('topic_one.html')
@@ -43,6 +44,8 @@ def render_test_page():
     return render_template('test_page.html')
 
 
+=======
+>>>>>>> upstream/master
 @app.route('/team.html')
 def render_team():
     return render_template('team.html')
