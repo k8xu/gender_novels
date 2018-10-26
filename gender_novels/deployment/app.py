@@ -19,21 +19,6 @@ def render_overview():
     return render_template('overview.html')
 
 
-@app.route('/team/')
-def render_team():
-    return render_template('team.html')
-
-
-@app.route('/about/')
-def render_about():
-    return render_template('about.html')
-
-
-@app.route('/social/')
-def render_social():
-    return render_template('social_media.html')
-
-
 @app.route('/copyright.html')
 def render_copyright():
     return render_template('copyright.html')
