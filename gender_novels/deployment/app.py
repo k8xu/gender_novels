@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-import pandas as pd
 
 app = Flask(__name__)
 app.config['ENV'] = 'development'
@@ -9,14 +8,14 @@ app.config['DEBUG'] = True
 print(app.config)
 
 """
-All of these functions render each individual subpage of the overall website
-so that the Gender Novels landing page is able to link to them
+These function calls render the individual pages of the overall website so that the
+landing page is able to link to them through the navbar
 """
 
 
 @app.route('/')
 def render_overview():
-    return render_template('overview.html')
+    return render_template('home.html')
 
 
 @app.route('/copyright.html')
@@ -28,6 +27,7 @@ def render_copyright():
 def render_corpora():
     return render_template('corpora.html')
 
+<<<<<<< HEAD
 
 @app.route('/topic_one.html')
 def render_topic_one():
@@ -37,6 +37,8 @@ def render_topic_one():
 @app.route('/testing_tutorial.html')
 def render_testing_tutorial():
     return render_template('testing_tutorial.html')
+=======
+>>>>>>> upstream/master
 
 
 @app.route('/test_page.html')
@@ -49,8 +51,22 @@ def render_team():
     return render_template('team.html')
 
 
+@app.route('/web-scraping.html')
+def render_web_scraping():
+    return render_template('web-scraping.html')
+
+
+@app.route('/metadata.html')
+def render_metadata():
+    return render_template('metadata.html')
+
+
 if __name__ == '__main__':
+<<<<<<< HEAD
     # open a web browser on the landing page
+=======
+    # Open a web browser on the landing page
+>>>>>>> upstream/master
     import webbrowser
     # note to self (Xu): correct on server but might try to use variable instead of hard code,
     # alternative to hardcoding but find later after development is done
