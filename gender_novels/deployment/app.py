@@ -27,7 +27,6 @@ def render_copyright():
 def render_corpora():
     return render_template('corpora.html')
 
-<<<<<<< HEAD
 
 @app.route('/topic_one.html')
 def render_topic_one():
@@ -37,8 +36,6 @@ def render_topic_one():
 @app.route('/testing_tutorial.html')
 def render_testing_tutorial():
     return render_template('testing_tutorial.html')
-=======
->>>>>>> upstream/master
 
 
 @app.route('/test_page.html')
@@ -62,11 +59,7 @@ def render_metadata():
 
 
 if __name__ == '__main__':
-<<<<<<< HEAD
-    # open a web browser on the landing page
-=======
     # Open a web browser on the landing page
->>>>>>> upstream/master
     import webbrowser
     # note to self (Xu): correct on server but might try to use variable instead of hard code,
     # alternative to hardcoding but find later after development is done
