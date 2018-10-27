@@ -28,7 +28,6 @@ def render_corpora():
     return render_template('corpora.html')
 
 
-<<<<<<< HEAD
 @app.route('/topic_one.html')
 def render_topic_one():
     return render_template('topic_one.html')
@@ -44,8 +43,6 @@ def render_test_page():
     return render_template('test_page.html')
 
 
-=======
->>>>>>> upstream/master
 @app.route('/team.html')
 def render_team():
     return render_template('team.html')
@@ -69,4 +66,3 @@ if __name__ == '__main__':
     # note to self (Xu): should be 188.166.88.141:8021
     webbrowser.open('http://127.0.0.1:8021/', new=2)
     app.run(host='127.0.0.1', port='8021')
-
