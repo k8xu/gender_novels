@@ -19,7 +19,6 @@ def render_overview():
     return render_markdown_any('gender_novels_overview', title='Gender in Novels, 1770–1922')
 
 
-<<<<<<< HEAD
 @app.route('/copyright.html')
 def render_copyright():
     return render_template('copyright.html')
@@ -45,10 +44,7 @@ def render_test_page():
     return render_template('test_page.html')
 
 
-@app.route('/team.html')
-=======
 @app.route('/info/team.html')
->>>>>>> upstream/master
 def render_team():
     return render_template('team.html')
 
