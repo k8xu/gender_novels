@@ -14,6 +14,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+    <!-- Social sharing -->
+    <meta property="og:image" content="http://gendernovels.digitalhumanitiesmit.org/static/graphics/gender_novels.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Gender Novels" />
+    <meta property="og:description" content="Computational Reading of Gender in Novels, 1770–1922" />
+
     <!-- Remarkable module -->
     <script src="https://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
 
@@ -113,7 +120,10 @@
     </div>
 
     <!-- Unique page content -->
-    {% block content %}{% endblock content %}
+    <div class="main" style=background-color:#FCF5E9;">
+        <br>
+        {% block content %}{% endblock content %}
+    </div>
 
     <!-- Footer -->
     <div class="container-fluid footer">
@@ -125,7 +135,7 @@
                          class="img-fluid mx-auto d-block mit-logo"></a>
             </div>
             <div class="col-2 align-self-center">
-                <a href="http://www.digitalhumanitiesmit.org/">
+                <a href="https://digitalhumanities.mit.edu/">
                 <img src="{{ url_for('static', filename='graphics/Dots alone White Transparent.png')
                         }}" alt="Digital Humanities Homepage"
                          class="img-fluid mx-auto d-block">
